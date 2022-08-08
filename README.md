@@ -1,19 +1,19 @@
-# Репозиторий создан для внутренного пользования, представляет собой краткие заметки о git.
+# Репозиторий создан для внутренного пользования, представляет собой краткие заметки о git без какой-либо структуры.
 
 ## Краткая информация по Git
 
 1. Установка терминала
   - [iTerm2](https://iterm2.com/) для macOS
   - [Tilix](https://gnunn1.github.io/tilix-web/) для Linux
-  - [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install) для Windows
-  - [Git Bash](https://git-scm.com/downloads) для всех систем
+  - [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install) Linux для Windows
+  - [Git Bash](https://git-scm.com/downloads) - установлено!
   - [Hyper.js](https://hyper.is/)
 2. Запустить терминал и выполнить следующие команды:
 ```bash
 $ git config --global user.name "Ivan Ivanov"             # Задать имя автора изменений
 $ git config --global user.email my_email@gmail.com       # Задать адрес почты автора изменений
-$ git config --global init.default branch main            # Задать основную ветку как 'main'
-$ git config --global color.ui true                       # Включить дополнительные цвета в терминале
+$ git config --global init.default branch main            # Задать основную ветку как 'main', если по-умолчанию стоит 'master'
+$ git config --global color.ui true                       # Включить дополнительные цвета в терминале, если они отключены
 
 
 $ git config --list                                       # Узнать текущие настройки

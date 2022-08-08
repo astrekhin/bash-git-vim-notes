@@ -43,3 +43,5 @@ $ git add .                            # Добавить все файлы
 $ git commit -m "Update"               # Сохранить изменения с коротким пояснением
 $ git diff                             # Показывает различия предыдущей и текущей версией файла
 ```
+
+[Основы командной строки](https://github.com/astrekhin/git-tutorial/blob/main/git.md)

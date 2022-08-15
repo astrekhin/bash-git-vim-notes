@@ -1,11 +1,6 @@
-# Репозиторий создан для внутренного пользования, представляет собой краткие заметки о git, bash без какой-либо структуры.
+[Index](https://github.com/astrekhin/py-tutorials)
 
-## Содержание
-[1. Основы командной строки (bash)](https://github.com/astrekhin/git-tutorial/blob/main/bash.md)
-[1. Основы git](https://github.com/astrekhin/git-tutorial/blob/main/git.md)
-[3. Основы vim](https://github.com/astrekhin/git-tutorial/blob/main/vim.md)
-
-### Краткая информация по Git
+# Краткая информация по Git
 
 1. Установка терминала
   - [iTerm2](https://iterm2.com/) для macOS
@@ -82,5 +77,6 @@ $ git pull
 # Просмотр различий предыдущей и текущей версией файла
 $ git diff                             
 ```
+
 
 

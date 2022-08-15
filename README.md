@@ -10,13 +10,12 @@
   - [Hyper.js](https://hyper.is/)
 2. Запустить терминал и выполнить следующие команды:
 ```bash
+$ git config --list                                       # Узнать текущие настройки
+
 $ git config --global user.name "Ivan Ivanov"             # Задать имя автора изменений
 $ git config --global user.email my_email@gmail.com       # Задать адрес почты автора изменений
 $ git config --global init.default branch main            # Задать основную ветку как 'main', если по-умолчанию стоит 'master'
 $ git config --global color.ui true                       # Включить дополнительные цвета в терминале, если они отключены
-
-
-$ git config --list                                       # Узнать текущие настройки
 ```
 
 3. Создать папку с проектом и перейти в нее
@@ -29,7 +28,18 @@ $ cd my-project
 ```bash
 $ git init                                                # Создание нового проекта из директории проекта (создается поддиректория .git)
 ```
-
+5. Добавление удаленного репозитория
+```bash
+## my_name - имя пользователя
+## my_project - название репозитория
+$ git remote add origin http://github.com/my_name/my_project.git 
+```
+6. Установка отслеживания локальной ветки и ветки удаленного репозитория
+```bash
+$ git push -u origin main
+# Аналогичная команда
+$ git push --set-upstream origin main
+```
 #### Другие команды:
 ```bash
 $ git clone https://github.com/libgit2/libgit2            # Клонирование репозитория с сайта в директорию 'libgit2'

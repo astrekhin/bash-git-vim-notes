@@ -40,7 +40,8 @@ $ git push -u origin main
 # Аналогичная команда
 $ git push --set-upstream origin main
 ```
-#### Другие команды:
+
+3.1. Скачивание удаленного репозитория на локальную машину
 ```bash
 $ git clone https://github.com/libgit2/libgit2            # Клонирование репозитория с сайта в директорию 'libgit2'
 $ git clone https://github.com/libgit2/libgit2 my_dir     # Клонирование репозитория с сайта в директорию 'my_dir'

@@ -8,7 +8,7 @@
   - [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install) Linux для Windows
   - [Git Bash](https://git-scm.com/downloads) - установлено!
   - [Hyper.js](https://hyper.is/)
-2. Запустить терминал и выполнить следующие команды:
+2. Задать параметры по-умолчанию
 ```bash
 $ git config --list                                       # Узнать текущие настройки
 

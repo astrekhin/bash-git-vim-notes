@@ -1,4 +1,4 @@
-[Index](https://github.com/astrekhin/py-tutorials)
+[Index](https://github.com/astrekhin/bash-git-vim-notes)
 
 # Краткая информация по Git
 

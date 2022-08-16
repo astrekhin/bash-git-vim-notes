@@ -4,5 +4,5 @@
 1. [Заметки по bash](bash.md)
 2. [Заметки по git](git.md)
 3. [Заметки по vim](vim.md)
-
+4. [Соглашение о коммитах](conventional-commit-messages.md)
 

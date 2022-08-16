@@ -2,6 +2,11 @@
 
 # Conventional Commit Messages 
 
+```bash
+git commit -m <message>                   # basic
+git commit -m <title> -m <description>    # detailed
+```
+
 ## Commit Formats (Формат коммитов)
 
 ### Default (По-умолчанию)
@@ -60,8 +65,11 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
 
 ### Examples (Примеры)
+
+#### feat - добавление новой функциональности
+
 * ```
-  feat(lang): added polish language
+  feat(lang): add russian language
   ```
 * ```
   feat(parser): add ability to parse arrays
@@ -75,11 +83,9 @@ The `footer` should contain any information about **Breaking Changes** and is al
   refers to JIRA-1337
   BREAKING CHANGES: ticket enpoints no longer supports list all entites.
   ```
-* ```
-  eat: allow provided config object to extend other configs
 
-  BREAKING CHANGE: `extends` key in config file is now used for extending other config files
-  ```
+#### fix - исправление ошибок в функциональности
+
 * ```
   fix: add missing parameter to service call
   
@@ -92,23 +98,76 @@ The `footer` should contain any information about **Breaking Changes** and is al
 
   fixes issue #12
   ```
+  
+#### docs - добавление или изменение документации
+
 * ```
-  build(release): bump version to 1.0.0
-  ```
-* ```
-  build: update dependencies
-  ```
-* ```
-  refactor: implement calculation method as recursion
+  docs(MockConnections): add mockError usage example
   ```
 * ```
   docs: correct spelling of CHANGELOG
   ```
 * ```
-  style: remove empty line
+  docs(zone.js): update DEVELOPER.md for changelog instruction (#32016)
+  ```
+* ```
+  docs: improve README.md
+  ```
+#### test -  добавление тестов (unit tests)
+
+#### refactor - изменение кода без добавления функциональности или исправления ошибок (удаление избыточного кода, переименование переменных)
+
+* ```
+  refactor(aio): remove redundant styles
+  ```
+* ```
+  refactor(compiler): rename decorator directives into directive
+  ```
+ 
+#### perf - улучшение производительности
+
+* ```
+  perf(payments): improve payment processing by 500ms
+  ```
+
+#### chore - без особого смысла
+
+* ```
+  chore: Fix XAML parsing sample
+  ```
+* ```
+  chore: move rock.mp3 into music
   ```
   
-  ---
+#### build - сборка версий, библиотек, зависимостей (некоторые пишут в chore)
+  
+* ```
+  build(release): bump version to 1.0.0
+  ```
+* ```
+  build: release version 2.1.0
+  ```
+* ```
+  build: update dependencies
+  ```
+
+#### style - изменение стиля, не влияющего на код (отсутствие запятой, точки с запятой, пробела)
+
+* ```
+  style: remove empty line
+  ```
+* ```
+  style(playground): use single quotes consistently
+  ```
+* ```
+  style(aio): add space between `.home` and `.hamburger`
+  ```
+* ```
+  style(nodeTree): fix formatting
+  ```
+
+
+---
   
 ### Sources (Источники): 
 1. [Conventional Commit Messages](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)

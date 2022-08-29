@@ -4,9 +4,10 @@
 
 ## Содержание
 
-1. [bash](bash.md)
-    - [Основные команды git-bash](bash.md)
-2. [git](git.md)
-3. [vim](vim.md)
-    - [Соглашение о коммитах](conventional-commit-messages.md
+1. [bash](/tools/bash.md)
+    - [Основные команды git-bash](/tools/bash.md)
+2. [git](/tools/git.md)
+3. [vim](/tools/vim.md)
+    - [Соглашение о коммитах](/tools/conventional-commit-messages.md)
 4. [Виртуальное окружение](/tools/env.md)
+5. [LaTeX](/tools/latex.md)

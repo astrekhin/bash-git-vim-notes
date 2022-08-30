@@ -42,7 +42,7 @@ git config --global
 # Расположение файла с настройками git для проекта
 /<project_name>/.git/config
 
-# Установка новых настроек git для проекта
+# Просмотр настроек проекта
 git config
 ```
 
@@ -50,19 +50,22 @@ git config
 
 ```bash
 # Узнать текущие настройки git
-$ git config --list    
+git config --list    
 
 # Задать имя автора изменений на все проекты (глобально)                               
-$ git config --global user.name "Ivan Ivanov"
+git config --global user.name "Ivan Ivanov"
 
 # Задать адрес почты автора изменений на все проекты (глобально)
-$ git config --global user.email my_email@gmail.com       
+git config --global user.email my_name@my_domain.com       
+
+# Задать основной текстовый редактор Visial Studio Code
+git config --global core.editor "code --wait"
 
 # Задать основную ветку как 'main', если по-умолчанию стоит 'master'
-$ git config --global init.default branch main            
+git config --global init.default branch main            
 
 # Включить дополнительные цвета в терминале, если они отключены
-$ git config --global color.ui true                       
+git config --global color.ui true                       
 ```
 
 ### 3. Создание репозитория
@@ -72,12 +75,12 @@ $ git config --global color.ui true
 
     ```bash
     # Создание директории с проектом
-    $ cd C:
-    $ mkdir my-project
-    $ cd my-project
+    cd C:
+    mkdir my-project
+    cd my-project
 
     # Инициализация проекта (создается поддиректория .git)
-    $ git init
+    git init
     ```
 
   - Добавление удаленного репозитория
@@ -86,26 +89,26 @@ $ git config --global color.ui true
     # origin - название ветки по-умолчанию
     # my_name - имя пользователя
     # my_project - название репозитория
-    $ git remote add origin http://github.com/my_name/my_project.git 
+    git remote add origin http://github.com/my_name/my_project.git 
     ```
 
   - Установка отслеживания локальной ветки и ветки удаленного репозитория
 
     ```bash
-    $ git push -u origin main
+    git push -u origin main
     # Аналогичная команда
-    $ git push --set-upstream origin main
+    git push --set-upstream origin main
     ```
 
 - Вариант 2. Клонирование (скачивание) удаленного репозитория на локальную машину
 
   ```bash
   # Клонирование удаленного репозитория в директорию с именем удаленного репозитория
-  $ git clone https://github.com/<my_github_login>/<my_project_name>
+  git clone https://github.com/<my_github_login>/<my_project_name>
   
   # Клонирование удаленного репозитория в директорию с именем 'my_dir', введенным пользователем 
-    $ git clone https://github.com/<my_githib_login>/<my_project_name> my_dir
-    ```
+  git clone https://github.com/<my_githib_login>/<my_project_name> my_dir
+  ```
 
 ### 4. Основные команды работы с локальным репозиторием
 

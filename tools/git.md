@@ -1,73 +1,128 @@
-[Index](https://github.com/astrekhin/bash-git-vim-notes)
-
 # Краткая информация по Git
 
-1. Установка терминала
-  - [iTerm2](https://iterm2.com/) для macOS
-  - [Tilix](https://gnunn1.github.io/tilix-web/) для Linux
-  - [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install) Linux для Windows
-  - [Git Bash](https://git-scm.com/downloads) - установлено!
-  - [Hyper.js](https://hyper.is/)
+## Технические требования
 
-2. Определение параметров по-умолчанию
+Установка терминала
+
+- [iTerm2](https://iterm2.com/) для macOS
+- [Tilix](https://gnunn1.github.io/tilix-web/) для Linux
+- [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install) Linux для Windows
+- [Git Bash](https://git-scm.com/downloads) - используется автором!
+- [Hyper.js](https://hyper.is/)
+
+## Настройки
+
+### 1. Расположение файла с настройками
+
+Настройки git делятся на несколько уровней:
+
+- System - системная настройка для всех пользователей
+
 ```bash
-# В терминале ввести следующие команды:
-$ git config --list                                       # Узнать текущие настройки git
+# Расположение файла с системными настройками для всех пользователей в Windows при установке Git по-умолчанию
+/c/Program Files/Git/etc/gitconfig
 
-$ git config --global user.name "Ivan Ivanov"             # Задать имя автора изменений на все проекты (глобально)
-$ git config --global user.email my_email@gmail.com       # Задать адрес почты автора изменений на все проекты (глобально)
-$ git config --global init.default branch main            # Задать основную ветку как 'main', если по-умолчанию стоит 'master'
-$ git config --global color.ui true                       # Включить дополнительные цвета в терминале, если они отключены
+# Установка новых системных настроек
+git config --system
 ```
 
-3. Создание репозитория
+- User - настройки для определенного пользователя
 
-  - Вариант 1. Создание пустого локального репозитория <br>
-    - Создание директории с именем проекта
+```bash
+# Расположение файла с настройками пользователя (редактор кода, почта, имя и т.д.)
+~/.gitconfig
+
+# Установка новых пользовательских настроек
+git config --global
+```
+
+- Project - настройки для определенного проекта
+
+```bash
+# Расположение файла с настройками пользователя (редактор кода, почта, имя и т.д.)
+/<project_name>/.git/config
+
+# Установка новых настроек проекта
+git config
+```
+
+### 2. Базовые параметры настроек
+
+```bash
+# Узнать текущие настройки git
+$ git config --list    
+
+# Задать имя автора изменений на все проекты (глобально)                               
+$ git config --global user.name "Ivan Ivanov"
+
+# Задать адрес почты автора изменений на все проекты (глобально)
+$ git config --global user.email my_email@gmail.com       
+
+# Задать основную ветку как 'main', если по-умолчанию стоит 'master'
+$ git config --global init.default branch main            
+
+# Включить дополнительные цвета в терминале, если они отключены
+$ git config --global color.ui true                       
+```
+
+### 3. Создание репозитория
+
+- Вариант 1. Создание пустого локального репозитория
+  - Создание директории с именем проекта
+
     ```bash
+    # Создание директории с проектом
     $ cd C:
     $ mkdir my-project
     $ cd my-project
-    # Создание пустого репозитория из директории проекта (создается поддиректория .git)
+
+    # Инициализация проекта (создается поддиректория .git)
     $ git init
     ```
-    - Добавление удаленного репозитория
+
+  - Добавление удаленного репозитория
+
     ```bash
     # origin - название ветки по-умолчанию
     # my_name - имя пользователя
     # my_project - название репозитория
     $ git remote add origin http://github.com/my_name/my_project.git 
     ```
-    - Установка отслеживания локальной ветки и ветки удаленного репозитория
+
+  - Установка отслеживания локальной ветки и ветки удаленного репозитория
+
     ```bash
     $ git push -u origin main
     # Аналогичная команда
     $ git push --set-upstream origin main
     ```
 
-  - Вариант 2. Клонирование (скачивание) удаленного репозитория на локальную машину
-    ```bash
-    # Клонирование удаленного репозитория в директорию 'libgit2'
-    $ git clone https://github.com/libgit2/libgit2                # Имя локального репозитория соответствует имени удаленного репозитория
-    # Клонирование удаленного репозитория в директорию 'my_dir'
-    $ git clone https://github.com/libgit2/libgit2 my_dir         # Имя локального репозитория задается пользователес 
+- Вариант 2. Клонирование (скачивание) удаленного репозитория на локальную машину
+
+  ```bash
+  # Клонирование удаленного репозитория в директорию с именем удаленного репозитория
+  $ git clone https://github.com/<my_github_login>/<my_project_name>
+  
+  # Клонирование удаленного репозитория в директорию с именем 'my_dir', введенным пользователем 
+    $ git clone https://github.com/<my_githib_login>/<my_project_name> my_dir
     ```
 
-4. Основные команды сработы с локальным репозиторием 
+### 4. Основные команды работы с локальным репозиторием
+
 ```bash
 # Создание нового файла в локальном репозитории
-# touch <file name>
+# touch <file_name>
 $ touch hello.py
 
 # Проверка состояния локального репозитория
 $ git status
 
 # Добавление файла в локальный репозиторий (индексация)
-# git add <file name>
+# git add <file_name>
 $ git add hello.py
 
 # Убрать файл из индексируемых (после git add)
-# git reset <file name>
+# git reset <file_name>
 $ git reset hello.py
 
 # Фиксация измений локального репозитория
@@ -93,6 +148,3 @@ $ git merge
 # Аналог выполнения команд fetch and merge
 $ git pull
 ```
-
-
-

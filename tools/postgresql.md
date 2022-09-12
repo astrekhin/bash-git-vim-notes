@@ -25,9 +25,8 @@
 - `port` — порт для подключения.
 - `database` — название базы данных.
 
-## Пример создания движка PostgreSQL
-
 ```python
+# Create engine
 from sqlalchemy import create_engine
 
 con = create_engine('postgresql+psycopg2://postgres:postgres:@localhost:5432/postgres')

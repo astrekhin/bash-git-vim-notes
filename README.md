@@ -4,7 +4,7 @@
 
 ## Содержание
 
-1. [bash](/tools/bash.md)
+1. bash
     - [Основные команды git-bash](/tools/bash.md)
 2. [git](/tools/git.md)
     - [Соглашение о коммитах](/tools/conventional-commit-messages.md)

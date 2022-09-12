@@ -13,4 +13,4 @@
     - [Pipenv в VSCode](/tools/pipenv_vscode.md)
 5. [LaTeX](/tools/latex.md)
 6. [Colab](/tools/colab.md)
-    - [Установка Postgresql в Colab](/tools/postregsql.md)
+    - [Установка PostgreSQL в Colab](/tools/postgresql.md)

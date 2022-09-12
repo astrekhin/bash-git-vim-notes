@@ -25,7 +25,7 @@
 - `port` — порт для подключения.
 - `database` — название базы данных.
 
-## Примеры создания движка PostgreSQL
+## Пример создания движка PostgreSQL
 
 ```python
 from sqlalchemy import create_engine
@@ -47,7 +47,7 @@ def select(sql):
     return pd.read_sql(sql, con)
 ```
 
-[Insertion method](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#insertion-method)
+Если файл с данными большой и чтение `sql` происходит медленно, то можно увеличить скорость чтения, используя [Insertion method](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html#insertion-method).
 
 ```python
 # Alternative to_sql() *method* for DBs that support COPY FROM

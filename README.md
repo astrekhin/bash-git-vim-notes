@@ -10,4 +10,6 @@
     - [Соглашение о коммитах](/tools/conventional-commit-messages.md)
 3. [vim](/tools/vim.md)
 4. [Виртуальное окружение](/tools/env.md)
+    - [Pipenv в VSCode](/tools/pipenv_vscode.md)
 5. [LaTeX](/tools/latex.md)
+6. [Colab](/tools/colab.md)

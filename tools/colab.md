@@ -13,7 +13,10 @@
 - Создать копию блокнота на `github`
   - File -> Save a copy in GitHub
 
-![Save a copy in GutHub|300](images/colab-save-github.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/colab_save_in_github_dark.png">
+  <img alt="Save a copy in github" src="images/colab_save_in_github_light.png">
+</picture>
 
 ## Ссылки
 

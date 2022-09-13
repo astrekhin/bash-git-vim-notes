@@ -7,7 +7,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/colab_new_notebook_dark.png">
-  <img alt="" src="images/colab-new-notebook.png">
+  <img alt="New notebook in light theme" src="images/colab_new_notebook_light.png">
 </picture>
 
 - Создать копию блокнота на `github`

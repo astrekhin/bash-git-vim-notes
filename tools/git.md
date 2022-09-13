@@ -1,16 +1,10 @@
 # Краткая информация по Git
 
-## Технические требования
+## Установка Git
 
-Установка терминала
+[Git Bash](https://git-scm.com/downloads) - эмулятор консоли с командами git
 
-- [iTerm2](https://iterm2.com/) для macOS
-- [Tilix](https://gnunn1.github.io/tilix-web/) для Linux
-- [WSL](https://docs.microsoft.com/ru-ru/windows/wsl/install) Linux для Windows
-- [Git Bash](https://git-scm.com/downloads) - используется автором!
-- [Hyper.js](https://hyper.is/)
-
-## Настройки
+## Настройки Git
 
 ### 1. Расположение файла с настройками
 

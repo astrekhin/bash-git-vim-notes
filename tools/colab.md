@@ -5,7 +5,10 @@
 - Создать файл с расширением `.ipynb` на сайте [Colabatory](https://colab.research.google.com/)
   - File -> New notebook
 
-![New notebook|300](images/colab-new-notebook.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/colab_new_notebook_dark.png">
+  <img alt="" src="images/colab-new-notebook.png">
+</picture>
 
 - Создать копию блокнота на `github`
   - File -> Save a copy in GitHub

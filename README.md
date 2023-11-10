@@ -9,14 +9,16 @@
 - IDE
   - VSCode
     - [Pipenv в VSCode](/tools/pipenv_vscode.md)
-- Облачнная среда для работы с Python
+- Облачная среда для работы с Python
   - [Colab](/tools/colab.md)
-    - [Установка SQLite3 в Colab](/tools/sqlite3.md)
-    - [Установка PostgreSQL в Colab](/tools/postgresql.md)
+
 - Система контроля версий
   - [git](/tools/git.md)
     - [Соглашение о коммитах](/tools/conventional-commit-messages.md)
   - [Основные команды git-bash](/tools/bash.md)
+- Базы данных
+  - [SQLite3](/tools/sqlite3.md)
+  - [PostgreSQL](/tools/postgresql.md)
 - Дополнительно
   - [Виртуальное окружение](/tools/env.md)
   - [LaTeX](/tools/latex.md)

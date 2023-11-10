@@ -12,16 +12,24 @@
 
 ### Запись уравнения
 
-Уравнение в строчку: $c = a + b$
+Уравнение в строчку: $c = a + b$ (1)
 
 ```latex
 Уравнение в строчку: $c = a + b$
 ```
 
-Уравнение по центру: $$c = a + b$$
+Уравнение по центру с автоматическим номером:
+$$
+\begin{equation}
+x_{1,2} = {-b \pm \sqrt{b^2 - 4ac} \over 2a}
+\end{equation}
+$$
 
 ```latex
-Уравнение по центру: $$c = a + b$$
+Уравнение по центру: 
+$$\begin{equation}
+x_{1,2} = {-b \pm \sqrt{b^2 - 4ac} \over 2a}
+\end{equation}$$
 ```
 
 ### Математические операторы
@@ -121,6 +129,70 @@ $$\lim_{x \to 0^+} \dfrac{1}{x} = \infty$$
 ```latex
 $$\lim_{x \to 0^+} \dfrac{1}{x} = \infty$$
 ```
+
+**The Cauchy-Schwarz Inequality**
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+$
+\sum_{\substack{
+   0<i<m \\
+   0<j<n
+  }} 
+ P(i,j)
+$
+
+**Matrix**
+$$\begin{matrix}
+  a & b & c \\
+  d & e & f \\
+  g & h & i
+ \end{matrix}$$
+
+**Формула с текстом**
+$$
+\begin{equation}
+50 \text{ apples} \times 100 \text{ apples} 
+ = \text{lots of apples}^2
+\end{equation}
+$$
+
+**Matrix** 
+$$
+\begin{equation}
+\begin{bmatrix}X\\Y\end{bmatrix}
+\end{equation}
+$$
+
+**Перенос формулы с выравниванием**
+$$
+\begin{equation}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+& = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}
+$$
+
+**Выравнивание по вертикали**
+$$
+\begin{equation}
+\begin{align*}
+x&=y           &  w &=z              &  a&=b+c\\
+2x&=-y         &  3w&=\frac{1}{2}z   &  a&=b\\
+-4 + 5x&=2+y   &  w+2&=-1+w          &  ab&=cb
+\end{align*}
+\end{equation}
+$$
+
+**Группировка и выравнивание по центру**
+$$
+\begin{equation}
+\begin{gather*} 
+2x - 5y =  8 \\ 
+3x^2 + 9y =  3a + c
+\end{gather*}
+\end{equation}
+$$
 
 ## Ссылки
 

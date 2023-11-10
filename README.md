@@ -11,7 +11,7 @@
     - [Pipenv в VSCode](/tools/pipenv_vscode.md)
 - Облачнная среда для работы с Python
   - [Colab](/tools/colab.md)
-    - [Установка SQLite3 в Colab](/tools/sqlite3/md)
+    - [Установка SQLite3 в Colab](/tools/sqlite3.md)
     - [Установка PostgreSQL в Colab](/tools/postgresql.md)
 - Система контроля версий
   - [git](/tools/git.md)

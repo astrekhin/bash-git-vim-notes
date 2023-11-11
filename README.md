@@ -5,20 +5,20 @@
 ## Содержание
 
 - Текстовый редактор
-  - [vim](/tools/vim.md)
+  - [vim](tools/vim.md)
 - IDE
   - VSCode
-    - [Pipenv в VSCode](/tools/pipenv_vscode.md)
+    - [Pipenv в VSCode](tools/pipenv_vscode.md)
 - Облачная среда для работы с Python
-  - [Colab](/tools/colab.md)
+  - [Colab](tools/colab.md)
 
 - Система контроля версий
-  - [git](/tools/git.md)
-    - [Соглашение о коммитах](/tools/conventional-commit-messages.md)
-  - [Основные команды git-bash](/tools/bash.md)
+  - [git](tools/git.md)
+    - [Соглашение о коммитах](tools/conventional-commit-messages.md)
+  - [Основные команды git-bash](tools/bash.md)
 - Базы данных
-  - [SQLite3](/tools/sqlite3.md)
-  - [PostgreSQL](/tools/postgresql.md)
+  - [SQLite3](tools/sqlite3.md)
+  - [PostgreSQL](tools/postgresql.md)
 - Дополнительно
-  - [Виртуальное окружение](/tools/env.md)
-  - [LaTeX](/tools/latex.md)
+  - [Виртуальное окружение](tools/env.md)
+  - [LaTeX](tools/latex.md)

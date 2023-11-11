@@ -1,6 +1,4 @@
-[Index](https://github.com/astrekhin/bash-git-vim-notes)
-
-# Conventional Commit Messages 
+# Conventional Commit Messages
 
 ```bash
 git commit -m <message>                   # basic
@@ -73,7 +71,6 @@ The `footer` should contain any information about **Breaking Changes** and is al
 * **optionally** reference an issue by its id.
 * **Breaking Changes** should start with the word `BREAKING CHANGES:` followed by space or two newlines. The rest of the commit message is then used for this. 
 
-
 ### Examples (Примеры)
 
 #### feat - добавление новой функциональности
@@ -142,7 +139,7 @@ The `footer` should contain any information about **Breaking Changes** and is al
 * ```commits
   refactor(compiler): rename decorator directives into directive
   ```
- 
+
 #### perf - улучшение производительности
 
 * ```commits

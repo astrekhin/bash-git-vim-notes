@@ -4,14 +4,16 @@
 
 ## Содержание
 
+- Консоль
+  - [bash](tools/bash.md)
 - Текстовый редактор
   - [vim](tools/vim.md)
 - IDE
   - VSCode
     - [Pipenv в VSCode](tools/pipenv_vscode.md)
+    - [Библиотеки VSCode](tools/vscode.md)  
 - Облачная среда для работы с Python
   - [Colab](tools/colab.md)
-
 - Система контроля версий
   - [git](tools/git.md)
     - [Соглашение о коммитах](tools/conventional-commit-messages.md)

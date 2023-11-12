@@ -7,8 +7,7 @@
   - [Подключение SQLite3](#подключение-sqlite3-и-проверка-установленной-версии)
 - [Создание базы данных SQLite3 в Google Drive](#создание-базы-данных-sqlite3-в-google-drive)
 - [Создание таблицы](#создание-таблицы)
-  - [Добавление данных в таблицу](#добавление-данных-в-таблицу)
-
+  - [Добавление данных в таблицу](#добавление-данных)
 
 ### Установка SQLite3 на Colab
 
@@ -58,7 +57,7 @@ drive.mount('/content/drive')
 path = '.drive/My Drive/my-db/test.db'
 
 conn = sqlite3.connect(path)
-print("Opened database successfully");
+print("Opened database successfully")
 ```
 
 ### Создание таблицы
@@ -78,6 +77,8 @@ print("Table created successfully");
 
 conn.commit()
 ```
+
+### Добавление данных
 
 #### Добавление данных в таблицу с помощью SQL-запроса
 

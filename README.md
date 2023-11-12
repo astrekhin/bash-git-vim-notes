@@ -21,6 +21,8 @@
 - Базы данных
   - [SQLite3](tools/sqlite3.md)
   - [PostgreSQL](tools/postgresql.md)
+- Библиотеки Python
+  - [Pandas]()
 - Дополнительно
   - [Виртуальное окружение](tools/env.md)
   - [LaTeX](tools/latex.md)

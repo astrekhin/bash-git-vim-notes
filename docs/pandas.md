@@ -27,15 +27,7 @@ dict_close_prices = {'APL.Close': [100, 110, 105],
                      'ABS.Close': [15, 16, 20]}
 
 df = pd.DataFrame(dict_close_prices, index=dates)
-
-df
 ```
-- Ntrcn
-  - Ntrcn
-    - ghjgh
-
-
-**Вывод**
 
 ### Загрузка данных
 
